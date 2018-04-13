@@ -274,19 +274,19 @@ static void  init_cols(void)
     //PORTF |=  (1<<7 | 1<<6 | 1<<5 | 1<<4 | 1<<1 | 1<<0);
     // Cist mimo
 
-    DDRB &=  ~(1<<5 | 1<<4)
-    PORTB |= (1<<5 | 1<<4)
+    DDRB &=  ~(1<<5 | 1<<4);
+    PORTB |= (1<<5 | 1<<4);
     // Evo to je ze boljse
 
-    DDRE &= ~(1<<6)
-    PORTE |= (1<<6)
+    DDRE &= ~(1<<6);
+    PORTE |= (1<<6);
 
-    DDRD &= ~(1<<4 | 1<<7)
-    PORTD |= (1<<4 | 1<<7)
+    DDRD &= ~(1<<4 | 1<<7);
+    PORTD |= (1<<4 | 1<<7);
 
 
-    DDRC &= ~(1<<6)
-    PORTC |= (1<<6)
+    DDRC &= ~(1<<6);
+    PORTC |= (1<<6);
 }
 
 static matrix_row_t read_cols(uint8_t row)
