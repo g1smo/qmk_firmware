@@ -16,10 +16,10 @@ void matrix_init_kb(void) {
     // unused pins - C7, D4, D5, D7, E6
     // set as input with internal pull-up enabled
     DDRC  &= ~(1<<7);
-    DDRD  &= ~(1<<5 | 1<<4);
+    DDRD  &= ~(1<<5);
     DDRE  &= ~(1<<6);
     PORTC |=  (1<<7);
-    PORTD |=  (1<<5 | 1<<4);
+    PORTD |=  (1<<5);
     PORTE |=  (1<<6);
 
     matrix_init_user();
