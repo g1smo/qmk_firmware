@@ -1,5 +1,5 @@
-#ifndef DACTYL_H
-#define DACTYL_H
+#ifndef DAKTIL_H
+#define DAKTIL_H
 
 #include "quantum.h"
 #include <stdint.h>

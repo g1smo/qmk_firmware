@@ -1,4 +1,4 @@
-#include "dactyl.h"
+#include "daktil.h"
 #include "debug.h"
 #include "action_layer.h"
 #include "version.h"
