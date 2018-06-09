@@ -42,17 +42,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           KC_LSFT,  CTL_T(KC_Z),           KC_X,     KC_C,     KC_V,  KC_B,
   LT(SYMB,KC_GRV),      KC_QUOT,  LALT(KC_LSFT),  KC_LEFT,  KC_RGHT,
                                                                       ALT_T(KC_APP),  KC_LGUI,
-                                                                                      KC_HOME,
-                                                             KC_SPC,        KC_BSPC,   KC_END,
+                                                                                       KC_SPC,
+                                                            KC_HOME,         KC_END,  KC_BSPC,
+                                        /* Because of daktil wiring, the thumb keys are different:
+                                                       key should be => key is
+                                                             KC_END  => KC_BSPC
+                                                             KC_BSPC => KC_END
+                                                            KC_LGUI  => KC_HOME
+                                                             KC_HOME => KC_SPC
+                                                                KC_SPC  => KC_LGUI */
         // right hand
                              KC_6,   KC_7,     KC_8,     KC_9,               KC_0,         KC_MINS,
                              KC_Y,   KC_U,     KC_I,     KC_O,               KC_P,         KC_BSLS,
                              KC_H,   KC_J,     KC_K,     KC_L,  LT(MDIA, KC_SCLN),  GUI_T(KC_QUOT),
                              KC_N,   KC_M,  KC_COMM,   KC_DOT,     CTL_T(KC_SLSH),         KC_RSFT,
                                     KC_UP,  KC_DOWN,  KC_LBRC,            KC_RBRC,          KC_FN1,
-          KC_RALT,  CTL_T(KC_ESC),
-          KC_PGUP,
-          KC_PGDN, KC_TAB, KC_ENT
+             KC_PGUP, CTL_T(KC_ESC),
+              KC_TAB,
+             KC_PGDN, KC_ENT, KC_RALT
+  /* Because of daktil wiring, the thumb keys are different:
+     key should be => key is
+           KC_PGUP => KC_TAB
+           KC_RALT => KC_ENT
+           KC_ENT  => KC_PGDN
+           KC_PGDN => KC_RALT
+           KC_TAB  => KC_PGUP */
     ),
 /* Keymap 1: Symbol Layer
  *
