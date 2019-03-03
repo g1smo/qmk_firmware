@@ -84,3 +84,6 @@ SWAP_HANDS_ENABLE       = yes # Allow swapping hands of keyboard
 SLEEP_LED_ENABLE        = no
 API_SYSEX_ENABLE        = no
 RGBLIGHT_ENABLE         = no
+
+# Fix za soft reest
+BOOTLOADER = caterina
