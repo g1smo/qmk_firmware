@@ -49,9 +49,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                              KC_H,   KC_J,     KC_K,     KC_L,  LT(MDIA, KC_SCLN),         KC_RSPC,
                              KC_N,   KC_M,  KC_COMM,   KC_DOT,     CTL_T(KC_SLSH),LT(SYMB,KC_QUOT),
                            KC_TAB, KC_ENT,  KC_LBRC,  KC_RBRC,
-
-                   LGUI_T(KC_ESC),KC_RALT,
-                          KC_PGDN,KC_PGUP
+                   LGUI_T(KC_ESC), KC_RALT,
+                          KC_PGUP, KC_PGDN
     ),
 /* Keymap 1: Symbol Layer
  *
@@ -120,16 +119,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          RESET,  KC_TRNS,  KC_WH_U,  KC_MS_U,  KC_WH_D,  KC_TRNS,
        KC_TRNS,  KC_TRNS,  KC_MS_L,  KC_MS_D,  KC_MS_R,  KC_TRNS,
        KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
-                           KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
-                                                KC_BTN2, KC_BTN1,
-                                                KC_BTN3, KC_TRNS,
+                           KC_TRNS,  KC_TRNS,  KC_BTN1,  KC_BTN2,
+                                               KC_MPLY,  KC_BTN3,
+                                               KC_MPRV,  KC_MNXT,
     // right hand
-                KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
+                  RESET,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
                   RESET,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_MPLY,
                 KC_LEFT,  KC_DOWN,    KC_UP,  KC_RIGHT, KC_TRNS,  KC_MPLY,
                 KC_TRNS,  KC_TRNS,  KC_MPRV,  KC_MNXT,  KC_TRNS,  KC_TRNS,
-                KC_TRNS,  KC_VOLU,  KC_VOLD,  KC_MUTE,
-                KC_TRNS,  KC_TRNS,
+                KC_TRNS,  KC_TRNS,  KC_VOLD,  KC_VOLU,
+                KC_TRNS,  KC_MUTE,
                 KC_TRNS,  KC_TRNS
 ),
 };
