@@ -40,11 +40,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [BASE] = LAYOUT_dactyl(  // layer 0 : default
         // left hand
-          KC_DELT,         KC_1,           KC_2,     KC_3,    KC_4,   KC_5,
+    LALT(KC_LSFT),         KC_1,           KC_2,     KC_3,    KC_4,   KC_5,
   LT(TKTK,KC_EQL),         KC_Q,           KC_W,     KC_E,    KC_R,   KC_T,
           KC_LSPO,         KC_A,           KC_S,     KC_D,    KC_F,   KC_G,
   LT(SYMB,KC_GRV),  CTL_T(KC_Z),           KC_X,     KC_C,    KC_V,   KC_B,
-                                  LALT(KC_LSFT),   KC_INS,  KC_SPC,KC_BSPC,
+                                        KC_DELT,   KC_INS,  KC_SPC,KC_BSPC,
                                             ALT_T(KC_APP),  LGUI_T(KC_ESC),
                                                    KC_END,         KC_HOME,
         // right hand
