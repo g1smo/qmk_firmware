@@ -64,7 +64,7 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 #   Atmel DFU loader 4096
 #   LUFA bootloader  4096
 #   USBaspLoader     2048
-OPT_DEFS += -DBOOTLOADER_SIZE=512
+#OPT_DEFS += -DBOOTLOADER_SIZE=512
 
 
 # Build Options
